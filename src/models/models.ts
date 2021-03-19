@@ -13,3 +13,5 @@ export class Chat {
         }
     }
 }
+
+export const Messages = [];

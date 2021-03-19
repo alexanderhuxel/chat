@@ -1,5 +1,3 @@
 <div class="texthistory">
-    <div *ngFor="let value of Messages;let even = even; let odd = odd;" [ngClass]="{message_left : even, message_right: odd}"> {{ value }} </div>
-
-
+    <div *ngFor="let value of messages.Messages;let even = even; let odd = odd;" [ngClass]="{message_left : even, message_right: odd}"> {{ value }} </div>
 </div>
