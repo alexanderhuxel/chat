@@ -1,0 +1,11 @@
+<div class="textbox">
+    <form class="example-form">
+        <mat-form-field class="size">
+            <mat-label>Type Message</mat-label>
+            <input matInput [name]="message"   [ngModelOptions]="{standalone : true}" [(ngModel)]="message">
+        </mat-form-field>
+        <button (click)="sendMessage();"  mat-fab color="primary">
+            <mat-icon>send</mat-icon>
+          </button>
+    </form>
+</div>
