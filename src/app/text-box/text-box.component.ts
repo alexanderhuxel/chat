@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Chat } from 'src/models/models';
 
 
@@ -8,7 +8,7 @@ import { Chat } from 'src/models/models';
   styleUrls: ['./text-box.component.sass']
 })
 export class TextBoxComponent implements OnInit {
-  message: string = "";
+  @Input() message: string = "";
   chat!: Chat;
 
   constructor() { }

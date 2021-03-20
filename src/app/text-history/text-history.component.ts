@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Chat, Messages } from 'src/models/models';
-import { MessagesService } from '../messages.service';
+
+import { Component, Input, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-text-history',
@@ -11,14 +11,12 @@ import { MessagesService } from '../messages.service';
 
 export class TextHistoryComponent implements OnInit {
 
-  constructor(public messages: MessagesService) {
-    this.messages.saveMesssage("Heloo from TextHistoryComponent");
-    console.log(this.messages.Messages);
+  constructor() {
+
   }
-  //Messages = ["ddass", "daes", "dasd"]; 
-  chat!: Chat;
+  message = "";
   ngOnInit(): void {
-    console.log(Messages);
+
   }
 
 }
