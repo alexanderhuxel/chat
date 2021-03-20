@@ -2,7 +2,7 @@
     <form class="example-form">
         <mat-form-field class="size">
             <mat-label>Type Message</mat-label>
-            <input matInput [name]="message"   [ngModelOptions]="{standalone : true}" [(ngModel)]="message">
+            <input matInput [name]="valueOfInput"   [ngModelOptions]="{standalone : true}" [(ngModel)]="valueOfInput">
         </mat-form-field>
         <button (click)="sendMessage();"  mat-fab color="primary">
             <mat-icon>send</mat-icon>

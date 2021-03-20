@@ -8,21 +8,19 @@ import { Chat } from 'src/models/models';
   styleUrls: ['./text-box.component.sass']
 })
 export class TextBoxComponent implements OnInit {
-  @Input() message: string = "";
+  @Input() valueOfInput: string = "";
   chat!: Chat;
-
   constructor() { }
 
 
   ngOnInit(): void {
     this.newChat();
-    console.log(this.chat)
   }
 
   sendMessage() {
-    this.chat.Messages.push(this.message);
-    this.message = "";
-    console.log(this.chat)
+    this.chat.Messages.push(this.valueOfInput);
+    console.log(this.chat);
+    this.valueOfInput = "";
 
   }
 
