@@ -14,7 +14,7 @@ export class TextHistoryComponent implements OnInit {
   constructor() {
 
   }
-  message = "";
+  @Input() valueOfInput = "";
   ngOnInit(): void {
 
   }
