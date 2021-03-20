@@ -1,5 +1,6 @@
 
 import { Component, Input, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 
 @Component({
@@ -11,9 +12,8 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class TextHistoryComponent implements OnInit {
 
-  constructor() {
+  constructor(public DataService: DataService) { }
 
-  }
   @Input() valueOfInput = "";
   ngOnInit(): void {
 

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Chat } from 'src/models/models';
+import { DataService } from '../data.service';
+
 
 
 @Component({
@@ -9,8 +10,8 @@ import { Chat } from 'src/models/models';
 })
 export class TextBoxComponent implements OnInit {
   @Input() valueOfInput: string = "";
-  chat!: Chat;
-  constructor() { }
+  chat!: DataService;
+  constructor(public DataService: DataService) { }
 
 
   ngOnInit(): void {
@@ -25,7 +26,7 @@ export class TextBoxComponent implements OnInit {
   }
 
   newChat() {
-    this.chat = new Chat();
+    this.chat = new DataService();
   }
 
 }
