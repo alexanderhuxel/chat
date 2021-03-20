@@ -10,23 +10,23 @@ import { DataService } from '../data.service';
 })
 export class TextBoxComponent implements OnInit {
   @Input() valueOfInput: string = "";
-  chat!: DataService;
-  constructor(public DataService: DataService) { }
+  //chat!: DataService;
+  constructor(public data: DataService) { }
 
 
   ngOnInit(): void {
-    this.newChat();
+    // this.newChat();
   }
 
   sendMessage() {
-    this.chat.Messages.push(this.valueOfInput);
-    console.log(this.chat);
+    this.data.Messages.push(this.valueOfInput);
+    console.log(this.data);
     this.valueOfInput = "";
 
   }
 
-  newChat() {
-    this.chat = new DataService();
-  }
+  // newChat() {
+  //   this.chat = new DataService();
+  // }
 
 }

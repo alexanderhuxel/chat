@@ -1,11 +1,11 @@
 <div class="userlist">
     <h1>Active Users</h1>
     <mat-list>
-        <mat-list-item class="user"><img src="../assets/img/man1.bmp"> User 1 </mat-list-item>
+        <mat-list-item *ngFor="let user of data.Users" class="user"><img src="../assets/img/man1.bmp"> {{user}} </mat-list-item>
+        <!-- <mat-list-item class="user"><img src="../assets/img/man1.bmp"> User 1 </mat-list-item>
         <mat-list-item class="user"><img src="../assets/img/woman1.bmp"> User 42</mat-list-item>
         <mat-list-item class="user"><img src="../assets/img/penguin.bmp"> User 442 </mat-list-item>
-        <mat-list-item class="user"><img src="../assets/img/unknown.bmp"> User 999 </mat-list-item>
-
+        <mat-list-item class="user"><img src="../assets/img/unknown.bmp"> User 999 </mat-list-item> -->
     </mat-list>
 
 </div>

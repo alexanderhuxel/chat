@@ -12,7 +12,7 @@ import { DataService } from '../data.service';
 
 export class TextHistoryComponent implements OnInit {
 
-  constructor(public DataService: DataService) { }
+  constructor(public data: DataService) { }
 
   @Input() valueOfInput = "";
   ngOnInit(): void {
